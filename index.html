@@ -1,47 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Abhi Rao</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abhishek Rao | Mechanical Engineering & Tech</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- Navigation bar -->
-  <nav>
-    <a href="#about">About</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-  </nav>
-
-  <!-- Hero -->
-  <header>
-    <h1>Abhishek 'Abhi' Rao</h1>
-    <p>Mining the galaxy 🚀</p>
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo">AR<span>.</span></a>
+      <nav class="nav-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact" class="btn-sm">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <!-- About section -->
-  <section id="about">
-    <h2>About Me</h2>
-    <p>Hi, my name is Abhi. I'm a junior at UC Riverside studying Mechanical Engineering and conducting research in the field of Asteroid Mining.</p>
-  </section>
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <p class="tagline">Hi, my name is</p>
+        <h1 class="hero-title">Abhishek Rao.</h1>
+        <h2 class="hero-subtitle">Mechanical Engineering & Technical Solutions.</h2>
+        <p class="hero-description">
+          Senior Mechanical Engineering student at UC Riverside focused on bridging physical hardware, computational modeling, and software engineering. Lean Six Sigma Green Belt certified with hands-on experience in CAD design, data analytics, and full-stack development.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+        </div>
+      </div>
+    </section>
 
-  <!-- Projects section -->
-  <section id="projects">
-    <h2>Projects</h2>
-    <ul>
-      <li><b>Asteroid Mining Research</b> – AI-powered asteroid classification for space exploration.</li>
-      <li><b>Healthy Recipe Recommender</b> – Hackathon project to help people cook smarter.</li>
-    </ul>
-  </section>
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+      <div class="container">
+        <h2 class="section-title"><span>01.</span> Technical Toolkit</h2>
+        <div class="skills-grid">
+          <div class="skill-category">
+            <h3>Engineering & Analysis</h3>
+            <ul class="tag-list">
+              <li>CAD / SolidWorks</li>
+              <li>FEA & Structural Simulation</li>
+              <li>Lean Six Sigma (Green Belt)</li>
+              <li>Minitab</li>
+              <li>Geometric Dimensioning & Tolerancing (GD&T)</li>
+            </ul>
+          </div>
+          <div class="skill-category">
+            <h3>Programming & Tools</h3>
+            <ul class="tag-list">
+              <li>Python (NumPy, Pandas)</li>
+              <li>React Native & Expo</li>
+              <li>Git & GitHub</li>
+              <li>MATLAB</li>
+              <li>Advanced Excel Modeling</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <!-- Contact section -->
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:youremail@example.com">theabhishek.a.rao@gmail.com</a></p>
-    <p>GitHub: <a href="https://github.com/abh1rao">github.com/abh1rao</a></p>
-  </section>
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h2 class="section-title"><span>02.</span> Featured Work</h2>
+        <div class="projects-grid">
+
+          <!-- Project 1 -->
+          <article class="project-card">
+            <div class="project-header">
+              <span class="project-type">Mobile Application</span>
+              <div class="project-links">
+                <a href="https://github.com/abh1rao/fermi-daily" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-name">Daily Fermi</h3>
+            <p class="project-desc">
+              Cross-platform React Native app featuring daily order-of-magnitude estimation challenges across three difficulty tiers. Incorporates daily resets, interactive streaks, and mathematical score scaling.
+            </p>
+            <ul class="project-tech">
+              <li>React Native</li>
+              <li>Expo</li>
+              <li>TypeScript / JavaScript</li>
+            </ul>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card">
+            <div class="project-header">
+              <span class="project-type">Aerospace & Data Analysis</span>
+            </div>
+            <h3 class="project-name">NASA Mission Trajectory & Telemetry Analysis</h3>
+            <p class="project-desc">
+              Conducted in-depth computational data research analyzing mission telemetry and trajectory datasets from NASA's DART, Lucy, and Psyche missions to model orbital dynamics and post-impact kinematics.
+            </p>
+            <ul class="project-tech">
+              <li>Python</li>
+              <li>Orbital Mechanics</li>
+              <li>Data Visualization</li>
+            </ul>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card">
+            <div class="project-header">
+              <span class="project-type">Structural Engineering</span>
+            </div>
+            <h3 class="project-name">Optimized Structural Design Competition</h3>
+            <p class="project-desc">
+              Engineered and fabricated a high-efficiency load-bearing structure evaluated under static and dynamic stress conditions. Achieved 1st place out of 39 competing collegiate teams through rigorous FEA load distribution modeling.
+            </p>
+            <ul class="project-tech">
+              <li>CAD Modeling</li>
+              <li>FEA Stress Analysis</li>
+              <li>Rapid Prototyping</li>
+            </ul>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+      <div class="container text-center">
+        <h2 class="section-title center"><span>03.</span> Connect</h2>
+        <p class="contact-prompt">
+          Whether you have an inquiry regarding engineering roles, project collaboration, or just want to say hi, my inbox is open.
+        </p>
+        <a href="mailto:your.email@email.com" class="btn btn-primary">Say Hello</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-content">
+      <p>Designed & Built by Abhishek Rao</p>
+      <div class="footer-links">
+        <a href="https://github.com/abh1rao" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
 
 </body>
 </html>
-
